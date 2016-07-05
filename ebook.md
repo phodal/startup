@@ -55,6 +55,86 @@
 
 所以如果你看到有一个项目使用到了XML，并且用到了Java语言，那么它应该就是一个Java项目了。
 
+### 人生苦短，我用Python
+
+![人生苦短 我用Python](./images/guido-python.jpg)
+
+SUN推出的打算运行在浏览器上的语言
+基金会 对象
+Apache / Eclipse
+GUI以丑而闻名于世
+
+缩进
+tab的异教图
+
+![Tabs vs Space](./images/tab-space.png)
+
+当然你不能这样用啊：
+
+![Tabs Space Both](./images/hybrid-tabs-spaces.png)
+
+
+### Lisp
+
+![Lisp Styles](./images/lisp-styles.jpg)
+
+
+老笑话：某黑客从美国国防部某个机密系统里拿到了一份源码，不过由于时间有限，只有最后几页，黑客想好歹仔细分析也有用，然而打开后就精神崩溃了——
+
+http://weblog.raganwald.com/2007/02/programming-language-stories.html
+
+### C
+
+结构化
+
+Linux基金会
+
+### Ruby
+
+Ruby 是一个宝石，不知行弘想送给谁
+
+RoR 火车上的宝石，但是太重了，比不上新干线
+
+Ruby on Rails Girl
+
+### JavaScript
+
+Most Popular Language
+
+$$$$$$$$$$$$$$$$$$$$$$
+
+jQuery -> Angular.js -> React -> Vue.js
+
+### Scala
+
+Scalar
+
+### Go
+
+Google的Go 原本是要叫Goooooooooogle后来太长了就变成Go了
+
+安德森說到了
+“googol”一詞，指的是10的100次冪（方），寫出的形式為數字1後跟100個零，可用來代表在互聯網上可以獲得的海
+量的資源。
+
+### PHP
+
+PHP原本是用于作个人首页，还有一些不法份子用于拍xx
+
+
+### Perl
+
+> 如果你给一百万只猴子每人一台电脑让它们在上面敲字儿.
+> 最终会有一只猴子能写出一段Java程序来,
+> 其余的猴子写出来的都是Perl代码.
+
+问：如何得到一段随机字符串？
+答：读取一个perl脚本
+
+http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke?sort=votes&page=1
+
+
+
 
 ### 二进制和汇编
 
