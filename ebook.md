@@ -261,7 +261,24 @@ PHP原本是用于作个人首页，还有一些不法份子用于拍xx
 http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke?sort=votes&page=1
 
 
+### Objective-C 和 Swift
 
+
+乔布斯被挤兑出苹果，创建了NextStep，里面带有的一整套开发包很是让一些科学家们喜欢。而这些里的类都是以NextStep的缩写开头的，即NS****，如：NSString、NSInteger、NSImage
+
+### R
+
+### C#
+
+### Lua
+
+### Scala
+
+### Erlang
+
+### Rust
+
+### Logo
 
 ### 二进制和汇编
 
