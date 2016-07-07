@@ -6,6 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Startup - </title>
   <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
   <link rel="stylesheet" href="style.css">
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -68,18 +105,56 @@
 <p>解释型语言，我不知道为什么Interpreted Language会翻译成解释型语言，总觉得“演绎”这个词来得更加精彩。简单地来说，就是在一步步演绎的过程中，演绎过一段精彩的故事。又扯远了，解释型语言就是在运行的时候才将代码翻译成机器可以执行的语言。这意意味着，我们可以在边写代码的时候，边试运行我们的代码。但是由于它需要在每次运行的时候才编译，所以总的来说效率会相对比较低一些。这一类的语言往往有比较好的跨平台能力，多数的语言都可以直接运行在不同的平台上。如Python、Perl、Ruby，还有直接可以运行于浏览器之上的JavaScript。</p>
 <p>哈哈，现在我们可以来对不同的编程语言做一些了解。</p>
 <h2 id="不同的编程语言">不同的编程语言</h2>
-<p>扯那么多废话，也是时候进入正题了，现在让我们先从Tiobe上排名第一的语言说起。</p>
+<p>扯那么多废话，也是时候进入正题了，现在让我们先从 Tiobe 上排名第一的语言说起。没错，这就是最近舆论的一个焦点——Java。</p>
 <h3 id="java和xml">Java和XML</h3>
 <p>那些写Java的程序员，实际上也都是个个都XML<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>高手，Java是他们的第二语言。</p>
 <figure>
 <img src="./images/xml.png" alt="XML" /><figcaption>XML</figcaption>
 </figure>
 <p>所以如果你看到有一个项目使用到了XML，并且用到了Java语言，那么它应该就是一个Java项目了。</p>
+<p>SUN推出的打算运行在嵌入式设备的一种通用语言，James Gosling等人发明这个语言的原因是因为 C++ 太难用了——后来，有一些人也因为难用改称C++为C艹。不过，Java语言运行在你家微波炉的计划很快就破灭了，于是它们就打算运行在浏览器之上。结果它运行在浏览器上的计划又失败了，但是这种做法便诞生了JavaScript。所以，其实Java和JavaScript还是有蛮大的关系的。</p>
+<p>今天，Java又运行在嵌入式设备上了——Android手机，也驱动着相当数量的网站。只是拿它做桌面应用的话，真的不是一般的丑：</p>
+<figure>
+<img src="./images/java-gui.png" alt="Swing GUI" /><figcaption>Swing GUI</figcaption>
+</figure>
+<p>看到这样的界面，你应该有足够的理由想到这是一个Java的GUI应用。丑是丑了点，但是它毕竟可以直接在不同的平台上运行啊。</p>
+<p>现在，让我们来看看Java的代码一般都长什么样？</p>
+<div class="sourceCode"><pre class="sourceCode java"><code class="sourceCode java"><span class="kw">package com.phodal.java;</span>
+<span class="kw">import java.io.IOException;</span>
+
+<span class="kw">import org.apache.http.HttpEntity;</span>
+<span class="kw">import org.apache.http.HttpResponse;</span>
+<span class="kw">import org.apache.http.client.ClientProtocolException;</span>
+<span class="kw">import org.apache.http.client.HttpClient;</span>
+<span class="kw">import org.apache.http.client.methods.HttpGet;</span>
+<span class="kw">import org.apache.http.impl.client.DefaultHttpClient;</span>
+<span class="kw">import org.apache.http.params.BasicHttpParams;</span>
+<span class="kw">import org.apache.http.params.HttpConnectionParams;</span>
+<span class="kw">import org.apache.http.params.HttpParams;</span>
+<span class="kw">import</span> org.apache.http.util.EntityUtils
+
+<span class="kw">public</span> <span class="kw">class</span> NetWorkUtil {
+
+    <span class="kw">public</span> <span class="dt">static</span> String <span class="fu">loginCheck_Get_HttpClient</span>(String url) {
+        String result = <span class="st">&quot;&quot;</span>;
+
+        HttpGet get = <span class="kw">new</span> <span class="fu">HttpGet</span>(url);
+        HttpParams params = <span class="kw">new</span> <span class="fu">BasicHttpParams</span>();
+        HttpConnectionParams.<span class="fu">setConnectionTimeout</span>(params, <span class="dv">5</span>*<span class="dv">1000</span>);
+        HttpConnectionParams.<span class="fu">setSoTimeout</span>(params, <span class="dv">5</span>*<span class="dv">1000</span>);
+
+        HttpClient client = <span class="kw">new</span> <span class="fu">DefaultHttpClient</span>(params);
+        <span class="co">// ...</span>
+        <span class="kw">return</span> result;
+    }
+}</code></pre></div>
+<p>如上是一个Java代码文件，在最开始的地方写的是包名。它可以很好的用于组织类、目录结构、防止命名冲突等等。通常来说，Java的包名以一定的规律来命名的，即：公司名称.开发组名称.项目名称。这一点同样可以见于Android应用的包名，如QQ是叫<code>com.tencent.qq</code>，而微信的是叫<code>com.tencent.mm</code>，微信的英语好像是WeChat，所以这个项目名称就不是叫WC了。不过，这看上去就有像网站的域名倒过去的样子，如上的com.phodal.java，倒过来就是java.phodal.com，同理也适用于tencent等等。</p>
+<p>接着出现了长长的<code>import</code>开头的代码，这表示了它要调用的包，上面就有相当数量的apache的包名了。Apache，Java世界的最大基金会之一，其代码软件是HTTP服务器Apache。以及其下属的一系列Java相关的开源软件，如：Hadoop、Storm、Lucene、Maven、Struts、Tomcat等等，以及诸如Cassandra、OpenOffice、Subversion、ActiveMQ、CouchDB、Cordova这样顶顶大名的软件。总而言之，它为世界和平做出了重要的贡献。</p>
+<pre><code>顺便提一下另外一家写Java出名的基金会，Eclipse——最初是由IBM公司开发的替代商业软件Visual Age for Java的下一代IDE开发环境，后来它变成了Eclipse基金会，其代表作品是Eclipse IDE。</code></pre>
 <h3 id="人生苦短我用python">人生苦短，我用Python</h3>
 <figure>
 <img src="./images/guido-python.jpg" alt="人生苦短 我用Python" /><figcaption>人生苦短 我用Python</figcaption>
 </figure>
-<p>SUN推出的打算运行在浏览器上的语言 基金会 对象 Apache / Eclipse GUI以丑而闻名于世</p>
 <p>缩进 tab的异教图</p>
 <figure>
 <img src="./images/tab-space.png" alt="Tabs vs Space" /><figcaption>Tabs vs Space</figcaption>

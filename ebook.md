@@ -45,7 +45,7 @@
 不同的编程语言
 ---
 
-扯那么多废话，也是时候进入正题了，现在让我们先从Tiobe上排名第一的语言说起。
+扯那么多废话，也是时候进入正题了，现在让我们先从 Tiobe 上排名第一的语言说起。没错，这就是最近舆论的一个焦点——Java。
 
 ### Java和XML
 
@@ -55,14 +55,57 @@
 
 所以如果你看到有一个项目使用到了XML，并且用到了Java语言，那么它应该就是一个Java项目了。
 
+SUN推出的打算运行在嵌入式设备的一种通用语言，James Gosling等人发明这个语言的原因是因为 C++ 太难用了——后来，有一些人也因为难用改称C++为C艹。不过，Java语言运行在你家微波炉的计划很快就破灭了，于是它们就打算运行在浏览器之上。结果它运行在浏览器上的计划又失败了，但是这种做法便诞生了JavaScript。所以，其实Java和JavaScript还是有蛮大的关系的。
+
+今天，Java又运行在嵌入式设备上了——Android手机，也驱动着相当数量的网站。只是拿它做桌面应用的话，真的不是一般的丑：
+
+![Swing GUI](./images/java-gui.png)
+
+看到这样的界面，你应该有足够的理由想到这是一个Java的GUI应用。丑是丑了点，但是它毕竟可以直接在不同的平台上运行啊。
+
+现在，让我们来看看Java的代码一般都长什么样？
+
+```java
+package com.phodal.java;
+import java.io.IOException;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
+import org.apache.http.util.EntityUtils
+
+public class NetWorkUtil {
+
+    public static String loginCheck_Get_HttpClient(String url) {
+        String result = "";
+
+        HttpGet get = new HttpGet(url);
+        HttpParams params = new BasicHttpParams();
+        HttpConnectionParams.setConnectionTimeout(params, 5*1000);
+        HttpConnectionParams.setSoTimeout(params, 5*1000);
+
+        HttpClient client = new DefaultHttpClient(params);
+        // ...
+        return result;
+    }
+}
+```
+
+如上是一个Java代码文件，在最开始的地方写的是包名。它可以很好的用于组织类、目录结构、防止命名冲突等等。通常来说，Java的包名以一定的规律来命名的，即：公司名称.开发组名称.项目名称。这一点同样可以见于Android应用的包名，如QQ是叫``com.tencent.qq``，而微信的是叫``com.tencent.mm``，微信的英语好像是WeChat，所以这个项目名称就不是叫WC了。不过，这看上去就有像网站的域名倒过去的样子，如上的com.phodal.java，倒过来就是java.phodal.com，同理也适用于tencent等等。
+
+接着出现了长长的``import``开头的代码，这表示了它要调用的包，上面就有相当数量的apache的包名了。Apache，Java世界的最大基金会之一，其代码软件是HTTP服务器Apache。以及其下属的一系列Java相关的开源软件，如：Hadoop、Storm、Lucene、Maven、Struts、Tomcat等等，以及诸如Cassandra、OpenOffice、Subversion、ActiveMQ、CouchDB、Cordova这样顶顶大名的软件。总而言之，它为世界和平做出了重要的贡献。
+
+    顺便提一下另外一家写Java出名的基金会，Eclipse——最初是由IBM公司开发的替代商业软件Visual Age for Java的下一代IDE开发环境，后来它变成了Eclipse基金会，其代表作品是Eclipse IDE。
+
 ### 人生苦短，我用Python
 
 ![人生苦短 我用Python](./images/guido-python.jpg)
-
-SUN推出的打算运行在浏览器上的语言
-基金会 对象
-Apache / Eclipse
-GUI以丑而闻名于世
 
 缩进
 tab的异教图
