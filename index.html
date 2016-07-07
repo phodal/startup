@@ -118,7 +118,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <img src="./images/java-gui.png" alt="Swing GUI" /><figcaption>Swing GUI</figcaption>
 </figure>
 <p>看到这样的界面，你应该有足够的理由想到这是一个Java的GUI应用。丑是丑了点，但是它毕竟可以直接在不同的平台上运行啊。</p>
-<p>现在，让我们来看看Java的代码一般都长什么样？</p>
+<p>现在，让我们来看看Java的代码一般都长什么样？首先，它一定是以.java作为后缀而结尾的。</p>
 <div class="sourceCode"><pre class="sourceCode java"><code class="sourceCode java"><span class="kw">package com.phodal.java;</span>
 <span class="kw">import java.io.IOException;</span>
 
@@ -150,7 +150,33 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 }</code></pre></div>
 <p>如上是一个Java代码文件，在最开始的地方写的是包名。它可以很好的用于组织类、目录结构、防止命名冲突等等。通常来说，Java的包名以一定的规律来命名的，即：公司名称.开发组名称.项目名称。这一点同样可以见于Android应用的包名，如QQ是叫<code>com.tencent.qq</code>，而微信的是叫<code>com.tencent.mm</code>，微信的英语好像是WeChat，所以这个项目名称就不是叫WC了。不过，这看上去就有像网站的域名倒过去的样子，如上的com.phodal.java，倒过来就是java.phodal.com，同理也适用于tencent等等。</p>
 <p>接着出现了长长的<code>import</code>开头的代码，这表示了它要调用的包，上面就有相当数量的apache的包名了。Apache，Java世界的最大基金会之一，其代码软件是HTTP服务器Apache。以及其下属的一系列Java相关的开源软件，如：Hadoop、Storm、Lucene、Maven、Struts、Tomcat等等，以及诸如Cassandra、OpenOffice、Subversion、ActiveMQ、CouchDB、Cordova这样顶顶大名的软件。总而言之，它为世界和平做出了重要的贡献。</p>
-<pre><code>顺便提一下另外一家写Java出名的基金会，Eclipse——最初是由IBM公司开发的替代商业软件Visual Age for Java的下一代IDE开发环境，后来它变成了Eclipse基金会，其代表作品是Eclipse IDE。</code></pre>
+<p>顺便提一下另外一家写Java出名的基金会，Eclipse——最初是由IBM公司开发的替代商业软件Visual Age for Java的下一代IDE开发环境，后来它变成了Eclipse基金会，其代表作品是Eclipse IDE。</p>
+<figure>
+<img src="./images/eclipse.png" alt="Eclipse IDE" /><figcaption>Eclipse IDE</figcaption>
+</figure>
+<p>有相当数量的IDE都是基于Eclipse，也有相当数量的Java GUI用的也是它，它的开头是:</p>
+<div class="sourceCode"><pre class="sourceCode java"><code class="sourceCode java"><span class="kw">import org.eclipse.swt.*;</span>
+<span class="kw">import org.eclipse.swt.widgets.*;</span>
+
+<span class="kw">public</span> <span class="kw">class</span> HelloWorld
+{
+    <span class="co">//...</span>
+}</code></pre></div>
+<p>如果是Web应用，那么它使用Spring的概率是相当大的：</p>
+<div class="sourceCode"><pre class="sourceCode java"><code class="sourceCode java"><span class="kw">import org.springframework.boot.autoconfigure.EnableAutoConfiguration;</span>
+<span class="kw">import org.springframework.web.bind.annotation.RequestMapping;</span>
+<span class="kw">import org.springframework.web.bind.annotation.RestController;</span>
+<span class="kw">import org.springframework.web.servlet.ModelAndView;</span></code></pre></div>
+<p>好了，让我们继续XML的话题，对于每个Java程序员来说，他们写的XML代码可能比Java还多。当一个程序员引用第三方库的时候，她多半需要这样写，以此来添加这个依赖库：</p>
+<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="co">&lt;!-- https://mvnrepository.com/artifact/org.mybatis/mybatis --&gt;</span>
+<span class="kw">&lt;dependency&gt;</span>
+    <span class="kw">&lt;groupId&gt;</span>org.mybatis<span class="kw">&lt;/groupId&gt;</span>
+    <span class="kw">&lt;artifactId&gt;</span>mybatis<span class="kw">&lt;/artifactId&gt;</span>
+    <span class="kw">&lt;version&gt;</span>3.2.8<span class="kw">&lt;/version&gt;</span>
+<span class="kw">&lt;/dependency&gt;</span></code></pre></div>
+<p>当然，在今天很多人可能会用Gradle：</p>
+<pre class="groovy"><code>compile group: &#39;org.mybatis&#39;, name: &#39;mybatis&#39;, version: &#39;3.2.8&#39;</code></pre>
+<p>通常来说，它会写上这两种方法来表明这是一个Java项目。</p>
 <h3 id="人生苦短我用python">人生苦短，我用Python</h3>
 <figure>
 <img src="./images/guido-python.jpg" alt="人生苦短 我用Python" /><figcaption>人生苦短 我用Python</figcaption>

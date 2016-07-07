@@ -63,7 +63,7 @@ SUN推出的打算运行在嵌入式设备的一种通用语言，James Gosling�
 
 看到这样的界面，你应该有足够的理由想到这是一个Java的GUI应用。丑是丑了点，但是它毕竟可以直接在不同的平台上运行啊。
 
-现在，让我们来看看Java的代码一般都长什么样？
+现在，让我们来看看Java的代码一般都长什么样？首先，它一定是以.java作为后缀而结尾的。
 
 ```java
 package com.phodal.java;
@@ -101,7 +101,49 @@ public class NetWorkUtil {
 
 接着出现了长长的``import``开头的代码，这表示了它要调用的包，上面就有相当数量的apache的包名了。Apache，Java世界的最大基金会之一，其代码软件是HTTP服务器Apache。以及其下属的一系列Java相关的开源软件，如：Hadoop、Storm、Lucene、Maven、Struts、Tomcat等等，以及诸如Cassandra、OpenOffice、Subversion、ActiveMQ、CouchDB、Cordova这样顶顶大名的软件。总而言之，它为世界和平做出了重要的贡献。
 
-    顺便提一下另外一家写Java出名的基金会，Eclipse——最初是由IBM公司开发的替代商业软件Visual Age for Java的下一代IDE开发环境，后来它变成了Eclipse基金会，其代表作品是Eclipse IDE。
+顺便提一下另外一家写Java出名的基金会，Eclipse——最初是由IBM公司开发的替代商业软件Visual Age for Java的下一代IDE开发环境，后来它变成了Eclipse基金会，其代表作品是Eclipse IDE。
+
+![Eclipse IDE](./images/eclipse.png)
+
+有相当数量的IDE都是基于Eclipse，也有相当数量的Java GUI用的也是它，它的开头是:
+
+```java
+import org.eclipse.swt.*;
+import org.eclipse.swt.widgets.*;
+
+public class HelloWorld
+{
+    //...
+}
+```
+
+如果是Web应用，那么它使用Spring的概率是相当大的：
+
+```java
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+```
+
+好了，让我们继续XML的话题，对于每个Java程序员来说，他们写的XML代码可能比Java还多。当一个程序员引用第三方库的时候，她多半需要这样写，以此来添加这个依赖库：
+
+```xml
+<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+<dependency>
+    <groupId>org.mybatis</groupId>
+    <artifactId>mybatis</artifactId>
+    <version>3.2.8</version>
+</dependency>
+```
+
+当然，在今天很多人可能会用Gradle：
+
+``` groovy
+compile group: 'org.mybatis', name: 'mybatis', version: '3.2.8'
+```
+
+通常来说，它会写上这两种方法来表明这是一个Java项目。
 
 ### 人生苦短，我用Python
 
