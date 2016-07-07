@@ -191,13 +191,14 @@ Python语言的人喜欢争论的是Tab和空格的问题，就好比是两个�
 
 ### Ruby
 
-Ruby 是一个宝石，不知行弘想送给谁
+Ruby和Python看上去有点相似——如果只是一行简单的代码的话。不过，有一点值得注意的事，应该没有人愿意去维护别人写的Ruby代码——新手Ruby程序员一般看不懂有经验的Ruby程序员写的代码：
 
-RoR 火车上的宝石，但是太重了，比不上新干线
+
+Ruby 是一个宝石，不知行弘想送给谁。RoR 火车上的宝石，但是太重了，比不上新干线
 
 Ruby on Rails Girl
 
-它继承自另外一种神奇的语言Lisp的风格。
+话说，Ruby是继承自另外一种神奇的语言Lisp的风格。
 
 ### Lisp
 
@@ -216,6 +217,10 @@ Linux基金会
 
 
 ### JavaScript
+
+当然JavaScript也是，不过它是一门没有经过深思熟虑设计出来的语言：
+
+![Terrible JavaScript](./images/terrible-javascript.png)
 
 Most Popular Language
 
