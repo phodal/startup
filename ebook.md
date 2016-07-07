@@ -143,18 +143,47 @@ import org.springframework.web.servlet.ModelAndView;
 compile group: 'org.mybatis', name: 'mybatis', version: '3.2.8'
 ```
 
-通常来说，它会写上这两种方法来表明这是一个Java项目。
+通常来说，它会写上这两种方法来表明这是一个Java项目。除此，还有一种方法可以证明这是一个Java语言的项目，那就是它的代码写起来很繁琐——看看最前端的Java代码你就知道了，它为了调用一个HTTP请求，居然需要这么多的类。除此，你还需要这样的代码用来对某个变量进行操作。。。
+
+```java
+	public Long getId() {
+		return this.id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+```
+
+我受不了，人生本来就如此的短暂，我居然要写这么没有意义的代码。
 
 ### 人生苦短，我用Python
 
+那个装着“人生苦短，我用Python”衣服的大叔就是写了Python语言的大叔：
+
 ![人生苦短 我用Python](./images/guido-python.jpg)
 
-缩进
-tab的异教图
+这么语言的最大特别是，格式固定，你不能写出下面的这种代码：
+
+![浪客剑心](./images/ioccc-ke.jpg)
+
+在哪个地方是一个缩进，你就应该用一个缩进：
+
+![Python缩进](./images/python-demo.jpg)
+
+不对，我应该用两个空格：
 
 ![Tabs vs Space](./images/tab-space.png)
 
-当然你不能这样用啊：
+Python语言的人喜欢争论的是Tab和空格的问题，就好比是两个不同的帮派。但是你不能这样混合着用（点的地方是空格，长线的是Tab），会被打死的：
 
 ![Tabs Space Both](./images/hybrid-tabs-spaces.png)
 
