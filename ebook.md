@@ -187,21 +187,11 @@ Python语言的人喜欢争论的是Tab和空格的问题，就好比是两个�
 
 ![Tabs Space Both](./images/hybrid-tabs-spaces.png)
 
+与Java相比，Python相比来说更为简单些。以致于它成为了相当多的科学家、数学家的使用语言，它在这方面颇有建树。
 
-### Lisp
+//TODO 待续
 
-![Lisp Styles](./images/lisp-styles.jpg)
-
-
-老笑话：某黑客从美国国防部某个机密系统里拿到了一份源码，不过由于时间有限，只有最后几页，黑客想好歹仔细分析也有用，然而打开后就精神崩溃了——
-
-http://weblog.raganwald.com/2007/02/programming-language-stories.html
-
-### C
-
-结构化
-
-Linux基金会
+然而，Python毕竟是一门相对比较简单的语言，她追求做事只有一种方法。而有一些程序员就不喜欢如此了，它们喜欢最事有很多方法，并且可以按自己的规则来办事。
 
 ### Ruby
 
@@ -210,6 +200,24 @@ Ruby 是一个宝石，不知行弘想送给谁
 RoR 火车上的宝石，但是太重了，比不上新干线
 
 Ruby on Rails Girl
+
+它继承自另外一种神奇的语言Lisp的风格。
+
+### Lisp
+
+Lisp语言的特征是“（）”，如果你看到一个大的Lisp项目，那么它的结果可能是这样的：
+
+![Lisp Styles](./images/lisp-styles.jpg)
+
+
+这是一个很老的笑话了：某黑客从美国国防部某个机密系统里拿到了一份源码，不过由于时间有限，只有最后几页，黑客想好歹仔细分析也有用，然而打开后就精神崩溃了——
+
+### C
+
+结构化
+
+Linux基金会
+
 
 ### JavaScript
 
